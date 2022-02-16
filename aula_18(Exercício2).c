@@ -35,9 +35,7 @@ int main(){
         }while(numero!=0);
         printf("\n");
     }
-    else {
-        printf("por favor digite um valor valido");
-    }
+    else
 
     return 0;
 }
