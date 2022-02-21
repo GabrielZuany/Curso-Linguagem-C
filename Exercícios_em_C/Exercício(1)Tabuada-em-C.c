@@ -14,9 +14,11 @@ int main(){
 
         do{ 
             resultado = numero*multiplicador;
-            printf("%f x %i = %f \n", numero, multiplicador, resultado);
+            printf("%.2f x %i = %.2f \n", numero, multiplicador, resultado);
             multiplicador++;
         }while (multiplicador<=20);
+
+        printf("Para efeitos de calculo, esta sendo utilizado arredondamento de duas casas decimais.\n");
 
     return 0;
 }
