@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int b;
-    int h;
-    int raio;
+    float b;
+    float h;
+    float raio;
 
-    int a; //altura da figura espacial
-    int area_base;
+    float a; //altura da figura espacial
+    float area_base;
 
 
     int opcao;
@@ -18,73 +18,73 @@ int main(){
             switch(alternativa){
                 case 1: 
                     printf("Digite o valor da base: \n");
-                    scanf("%i", &b);
+                    scanf("%f", &b);
                     printf("Digite o valor da altura: \n");
-                    scanf("%i", &h);
-                    int area_quadrado = b*h;
-                    printf("A area do quadrado = %iu2\n", area_quadrado);
+                    scanf("%f", &h);
+                    float area_quadrado = b*h;
+                    printf("A area do quadrado = %.2f u2\n", area_quadrado);
                 break;
 
                 case 2: 
                     printf("Digite o valor da base: \n");
-                    scanf("%i", &b);
+                    scanf("%f", &b);
                     printf("Digite o valor da altura: \n");
-                    scanf("%i", &h);
-                    int area_triangulo = b*h/2;
-                    printf("A area do triangulo = %iu2\n", area_triangulo);
+                    scanf("%f", &h);
+                    float area_triangulo = b*h/2;
+                    printf("A area do triangulo = %.2f u2\n", area_triangulo);
                 break;
 
                 case 3: 
                     printf("Digite o valor da base: \n");
-                    scanf("%d", &b);
+                    scanf("%f", &b);
                     printf("Digite o valor da altura: \n");
-                    scanf("%d", &h);
-                    int area_retangulo = b*h;
-                    printf("A area do retangulo = %iu2\n", area_retangulo);
+                    scanf("%f", &h);
+                    float area_retangulo = b*h;
+                    printf("A area do retangulo = %.2f u2\n", area_retangulo);
                 break;
 
                 case 4: 
                     printf("Digite o valor da base: \n");
-                    scanf("%d", &b);
-                    int area_hexagono = 3*b*b*1.7/2;
-                    printf("A area do hexagono = %iu2\n", area_hexagono);
+                    scanf("%f", &b);
+                    float area_hexagono = 3*b*b*1.7/2;
+                    printf("A area do hexagono = %.2f u2\n", area_hexagono);
                 break;
 
                 case 5: 
                     printf("Digite o valor do raio: \n");
-                    scanf("%d", &raio);
-                    int area_circulo = 3*raio*raio;
-                    printf("A area do circulo = %iu2\n", area_circulo);
+                    scanf("%f", &raio);
+                    float area_circulo = 3.14*raio*raio;
+                    printf("A area do circulo = %.2f u2\n", area_circulo);
                 break;
 
                 case 6:
                     printf("Digite o valor da area da base: \n");
-                    scanf("%d", &area_base);
+                    scanf("%f", &area_base);
                     printf("DIgite o valor da altura: \n");
-                    scanf("%d", &a);
-                    int volume_cubo = area_base*a;
-                    printf("O volume do cubo = %iu3\n", volume_cubo);
+                    scanf("%f", &a);
+                    float volume_cubo = area_base*a;
+                    printf("O volume do cubo = %.2f u3\n", volume_cubo);
                 break;
 
                 case 7:
                     printf("Digite o valor do raio da esfera: \n");
-                    scanf("%d", &raio);
-                    int volume_esfera = 4*raio*raio*raio;
-                    printf("O volume da esfera = %iu3\n", volume_esfera);
+                    scanf("%f", &raio);
+                    float volume_esfera = (4/3)*3.14*raio*raio*raio;
+                    printf("O volume da esfera = %.2f u3\n", volume_esfera);
                 break;
 
                 case 8:
                     printf("Digite o valor da area da base do prisma: \n");
-                    scanf("%d", &area_base);
+                    scanf("%f", &area_base);
                     printf("Digite o valor da altura: \n");
-                    scanf("%d", &a);
-                    int volume_prisma = area_base*a;
-                    printf("O volume do prisma = %iu3\n", volume_prisma);
+                    scanf("%f", &a);
+                    float volume_prisma = area_base*a;
+                    printf("O volume do prisma = %.2f u3\n", volume_prisma);
                 break;
 
                 default:
                     printf("Erro! Por favor escolha uma das opcoes.\n");
                 }
-        printf("OBS: Para efeito de calculo assuma que: PI=3 e raiz3=1,7.\n");
+        printf("OBS: Para efeito de calculo assuma que: raiz3=1,7.\n");
 return 0;
 }
