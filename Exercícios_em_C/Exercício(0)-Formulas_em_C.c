@@ -2,16 +2,16 @@
 
 int main()
 {
-    float b;
-    float h;
+    float b; //base da fig plana
+    float h;//altura da fig plana
     float raio;
 
     float a; //altura da figura espacial
     float area_base;
 
 
-    char opcao;
-    int alternativa;
+    char opcao; //Indica ao programa qual tipo de figura sera calculada
+    int alternativa; //indica ao programa qual a figura que sera calculada
 
     printf("Escolha o que deseja calcular: \n");
     printf("a)Area; \nb)Volume;\n");
@@ -111,6 +111,6 @@ int main()
         }
             
         printf("OBS: Para efeito de calculo assuma que: raiz3=1,7.\n");
-        
+
     return 0;
 }
