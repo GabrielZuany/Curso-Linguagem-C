@@ -15,13 +15,13 @@ int main()
     char opcao; //Indica ao programa qual tipo de figura sera calculada
     int alternativa; //indica ao programa qual a figura que sera calculada
     printf("Escolha o que deseja calcular:\n \n");
-    printf("a)Area; \nb)Volume;\nc)Converter undades de temperatura;\nd)Sair do programa.\n");
+    printf("a)Area; \nb)Volume;\nc)Converter undades de temperatura;\nd)Sair do programa.\n\n");
     scanf("%c", &opcao);
 
         switch (opcao)
         {
             case 'a': 
-                printf("OBS: Para efeito de calculo assuma que: raiz3=1,7.\n");
+                printf("\nOBS: Para efeito de calculo assuma que: raiz3=1,7.\n");
                 printf("1)Area do Quadrado;\n2)Area do Triangulo;\n3)Area do Retangulo;\n4)Area do Hexagono;\n5)Area do Circulo;\n");
                 scanf("%d", &alternativa);
                 
@@ -30,9 +30,7 @@ int main()
                     case 1: 
                         printf("Digite o valor da base: \n");
                         scanf("%f", &b);
-                        printf("Digite o valor da altura: \n");
-                        scanf("%f", &h);
-                        float area_quadrado = b*h;
+                        float area_quadrado = b*b;
                         printf("A area do quadrado = %.2f u2\n", area_quadrado);
                     break;
 
@@ -81,11 +79,9 @@ int main()
                 switch (alternativa)
                 {
                     case 1:
-                        printf("Digite o valor da area da base: \n");
-                        scanf("%f", &area_base);
-                        printf("DIgite o valor da altura: \n");
+                        printf("Digite o valor da base: \n");
                         scanf("%f", &a);
-                        float volume_cubo = area_base*a;
+                        float volume_cubo = a*a*a;
                         printf("O volume do cubo = %.2f u3\n", volume_cubo);
                     break;
 
