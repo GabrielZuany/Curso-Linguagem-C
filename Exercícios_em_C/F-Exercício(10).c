@@ -16,14 +16,14 @@ int main(void){
     printf("Digite o numero de provas: ");
     scanf("%i", &numerodenotas);
 
-    int AlunosNotas[numeroalunos][numerodenotas];
+    float AlunosNotas[numeroalunos][numerodenotas];
     float mediasAlunos[numeroalunos];
     float media=0; 
 
     for(l=0;l<numeroalunos;++l){
-        printf("Digite a nota do aluno %i: \n", l+1);
+        printf("Digite as notas do aluno %i: \n", l+1);
         for(c=0;c<numerodenotas ;++c){
-            scanf("%i", &AlunosNotas[l][c]);
+            scanf("%f", &AlunosNotas[l][c]);
                 
                 if(AlunosNotas[l][c]>10){
                     printf("Serao aceitas somente notas entre 0 e 10\n");
@@ -41,7 +41,7 @@ int main(void){
     for(l=0;l<numeroalunos;++l){
         printf("As notas do aluno %i foram: ", l+1);
         for(c=0;c<numerodenotas;++c){
-            printf("// %i //", AlunosNotas[l][c]);
+            printf("// %.2f //", AlunosNotas[l][c]);
         }
         printf(" MEDIA == %.2f\n", mediasAlunos[l]); 
         }
