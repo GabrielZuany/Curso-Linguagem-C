@@ -2,19 +2,27 @@
 cada um dos alunos de uma turma (as notas tem de estar no intervalo [0 10]) e
 imprime para cada um a média das notas.*/
 
+/*ADICIONADO=======> O USUARIO PODE ESCOLHER O NUMERO DE ALUNOS E O NUMERO DE PROVAS REALIZADAS*/
+
 #include<stdio.h>
 
 int main(void){
     int l;
     int c;
-    int AlunosNotas[3][2]={0};
-    float mediasAlunos[3]={0};
-    float media=0;    
-    
+    int numeroalunos;
+    int numerodenotas;
+    printf("Digite o numero de alunos presentes: \n");
+    scanf("%i", &numeroalunos);
+    printf("Digite o numero de provas: ");
+    scanf("%i", &numerodenotas);
 
-    for(l=0;l<3;++l){
+    int AlunosNotas[numeroalunos][numerodenotas];
+    float mediasAlunos[numeroalunos];
+    float media=0; 
+
+    for(l=0;l<numeroalunos;++l){
         printf("Digite a nota do aluno %i: \n", l+1);
-        for(c=0;c<2 ;++c){
+        for(c=0;c<numerodenotas ;++c){
             scanf("%i", &AlunosNotas[l][c]);
                 
                 if(AlunosNotas[l][c]>10){
@@ -25,14 +33,14 @@ int main(void){
 
             media+=AlunosNotas[l][c];
         }
-        mediasAlunos[l]=media/2;
+        mediasAlunos[l]=media/numerodenotas;
         media=media*0;
     }
 /*-----------*----------------*---------------*----------*/
    
-    for(l=0;l<3;++l){
+    for(l=0;l<numeroalunos;++l){
         printf("As notas do aluno %i foram: ", l+1);
-        for(c=0;c<2 ;++c){
+        for(c=0;c<numerodenotas;++c){
             printf("// %i //", AlunosNotas[l][c]);
         }
         printf(" MEDIA == %.2f\n", mediasAlunos[l]); 
