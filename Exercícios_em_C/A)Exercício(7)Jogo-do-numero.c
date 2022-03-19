@@ -5,7 +5,7 @@
 
 int main(){
 
-    int tentativas = 5;
+    int tentativas = 10;
     int valor_digitado;
 
     srand(time(NULL));//função que precede a geração de um num aleatorio. ela retira um valor a partir do horario de entrada no sistema

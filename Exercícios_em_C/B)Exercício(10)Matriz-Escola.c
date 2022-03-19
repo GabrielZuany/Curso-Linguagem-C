@@ -7,8 +7,8 @@ imprime para cada um a média das notas.*/
 #include<stdio.h>
 
 int main(void){
-    int l;
-    int c;
+    int l; //linha
+    int c; //coluna
     int numeroalunos;
     int numerodenotas;
     printf("Digite o numero de alunos presentes: \n");
@@ -16,8 +16,8 @@ int main(void){
     printf("Digite o numero de provas: ");
     scanf("%i", &numerodenotas);
 
-    float AlunosNotas[numeroalunos][numerodenotas];
-    float mediasAlunos[numeroalunos];
+    float AlunosNotas[numeroalunos][numerodenotas];//notas do alunos [numero de alunos][numero de notas]
+    float mediasAlunos[numeroalunos]; //numero de medias calculadas
     float media=0; 
 
     for(l=0;l<numeroalunos;++l){
