@@ -1,7 +1,7 @@
 #include<stdio.h>
 //#include<string.h>
 
-int main(void){
+int main(void){ 
     void concatenarStrings(char string1[], int t1, char string2[], int t2, char string3[]);
 
     int i;
