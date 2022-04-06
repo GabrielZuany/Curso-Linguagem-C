@@ -12,8 +12,7 @@ int main(void){
 
         void funcaoJogada(void);
         funcaoJogada(); 
-    
-
+        
     system("pause");
     return 0;
 }
@@ -23,12 +22,40 @@ int main(void){
 void funcaoJogada(void){
     int contador;
     for(contador=0;contador<5;++contador){
-        funcaoprint();
-        funcaoEscolhaX();
-        funcaoprint();
-        if(contador<4){
-            funcaoEscolhaO();
-        }  
+        if(
+        (matriz[0][0]=='x' && matriz[0][1]=='x' && matriz[0][2]=='x')|| 
+        (matriz[0][0]=='x' && matriz[1][0]=='x' && matriz[2][0]=='x')|| 
+        (matriz[0][1]=='x' && matriz[1][1]=='x' && matriz[2][1]=='x')||
+        (matriz[0][2]=='x' && matriz[1][2]=='x' && matriz[2][2]=='x')||
+        (matriz[0][0]=='x' && matriz[1][1]=='x' && matriz[2][2]=='x')||
+        (matriz[1][0]=='x' && matriz[1][1]=='x' && matriz[1][2]=='x')||
+        (matriz[2][0]=='x' && matriz[2][1]=='x' && matriz[2][2]=='x')||
+        (matriz[2][0]=='x' && matriz[1][1]=='x' && matriz[0][2]=='x')
+        ){
+            printf("Jogador X venceu\n\n");
+        }
+        else if(
+        (matriz[0][0]=='O' && matriz[0][1]=='O' && matriz[0][2]=='O')|| 
+        (matriz[0][0]=='O' && matriz[1][0]=='O' && matriz[2][0]=='O')|| 
+        (matriz[0][1]=='O' && matriz[1][1]=='O' && matriz[2][1]=='O')||
+        (matriz[0][2]=='O' && matriz[1][2]=='O' && matriz[2][2]=='O')||
+        (matriz[0][0]=='O' && matriz[1][1]=='O' && matriz[2][2]=='O')||
+        (matriz[1][0]=='O' && matriz[1][1]=='O' && matriz[1][2]=='O')||
+        (matriz[2][0]=='O' && matriz[2][1]=='O' && matriz[2][2]=='O')||
+        (matriz[2][0]=='O' && matriz[1][1]=='O' && matriz[0][2]=='O')
+        ){
+            printf("Jogador O venceu\n\n");
+        }
+        
+        else{
+            funcaoprint();
+            funcaoEscolhaX();
+            funcaoprint();
+            if(contador<4){
+                funcaoEscolhaO();
+                }
+            }
+    
     }
 }
 
@@ -58,3 +85,30 @@ void funcaoEscolhaO(void){
     j=l-1;
     matriz[i][j] = 'O';
 }
+
+
+
+/*
+-------------------condições de vitoria jog X
+
+(matriz[0][0]=='x' && matriz[0][1]=='x' && matriz[0][2]=='x') || 
+(matriz[0][0]=='x' && matriz[1][0]=='x' && matriz[2][0]=='x') || 
+(matriz[0][1]=='x' && matriz[1][1]=='x' && matriz[2][1]=='x') || 
+(matriz[0][2]=='x' && matriz[1][2]=='x' && matriz[2][2]=='x') || 
+(matriz[0][0]=='x' && matriz[1][1]=='x' && matriz[2][2]=='x') || 
+(matriz[1][0]=='x' && matriz[1][1]=='x' && matriz[1][2]=='x') || 
+(matriz[2][0]=='x' && matriz[2][1]=='x' && matriz[2][2]=='x') || 
+(matriz[2][0]=='x' && matriz[1][1]=='x' && matriz[0][2]=='x')
+
+-------------------condições de vitoria jog O
+
+(matriz[0][0]=='O' && matriz[0][1]=='O' && matriz[0][2]=='O')|| 
+(matriz[0][0]=='O' && matriz[1][0]=='O' && matriz[2][0]=='O')|| 
+(matriz[0][1]=='O' && matriz[1][1]=='O' && matriz[2][1]=='O')||
+(matriz[0][2]=='O' && matriz[1][2]=='O' && matriz[2][2]=='O')||
+(matriz[0][0]=='O' && matriz[1][1]=='O' && matriz[2][2]=='O')||
+(matriz[1][0]=='O' && matriz[1][1]=='O' && matriz[1][2]=='O')||
+(matriz[2][0]=='O' && matriz[2][1]=='O' && matriz[2][2]=='O')||
+(matriz[2][0]=='O' && matriz[1][1]=='O' && matriz[0][2]=='O')
+
+*/
