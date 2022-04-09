@@ -84,7 +84,15 @@ void funcaoEscolhaX(void){
     scanf("%i %i", &k, &l);//escanear somente os valores de K e L. se for escanear a matriz(tipo char), nao sera possivel inserir o valor da POSIÇÃO desejada. 
     i=k-1;
     j=l-1;
+
+    while((matriz[i][j]=='O') || (matriz[i][j]=='x')){
+        printf("Digite uma posicao vazia.\n");
+        scanf("%i %i", &k, &l);
+        i=k-1;
+        j=l-1;
+    }
     matriz[i][j] = 'x';
+   
 }
 
 //-----------*-----------------------*-------------------*---------------------*
@@ -95,7 +103,15 @@ void funcaoEscolhaO(void){
 
     i=k-1;//na matriz a linha 1 corresponde ao valor 0. Supondo que o usuario nao saiba que na computação linha 1 = 0, ele digitará linha 1 = 1. Logo, foi necessário converter o valor digitado para o tradicional.
     j=l-1;
+
+    while((matriz[i][j]=='O') || (matriz[i][j]=='x')){
+        printf("Digite uma posicao vazia.\n");
+        scanf("%i %i", &k, &l);
+        i=k-1;
+        j=l-1;
+    }
     matriz[i][j] = 'O';
+    
 }
 
 
