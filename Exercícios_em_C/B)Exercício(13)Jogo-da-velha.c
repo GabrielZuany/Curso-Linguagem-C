@@ -5,7 +5,7 @@
     int k, l;//numeros digtados pelo usuario
     int i; // variavel de controle de loop
     int j; // variavel de controle de loop
-    char matriz[3][3]={'-','-','-','-','-','-','-','-','-'};
+    char matriz[3][3]={' ',' ',' ',' ',' ',' ',' ',' ',' '};
 
 int main(void){
     int contador;
@@ -20,8 +20,6 @@ int main(void){
 
 
 //--------------------------------------FUNÇÕES------------------------------------
-
-
 
 void funcaoJogada(void){
     int contador;
@@ -56,16 +54,23 @@ void funcaoJogada(void){
             funcaoEscolhaX();
             funcaoprint();
             if(contador<4){
-                funcaoEscolhaO();
-                }
-            }
-    
+                if( (matriz[0][0]=='x' && matriz[0][1]=='x' && matriz[0][2]=='x')|| 
+                    (matriz[0][0]=='x' && matriz[1][0]=='x' && matriz[2][0]=='x')|| 
+                    (matriz[0][1]=='x' && matriz[1][1]=='x' && matriz[2][1]=='x')||
+                    (matriz[0][2]=='x' && matriz[1][2]=='x' && matriz[2][2]=='x')||
+                    (matriz[0][0]=='x' && matriz[1][1]=='x' && matriz[2][2]=='x')||
+                    (matriz[1][0]=='x' && matriz[1][1]=='x' && matriz[1][2]=='x')||
+                    (matriz[2][0]=='x' && matriz[2][1]=='x' && matriz[2][2]=='x')||
+                    (matriz[2][0]=='x' && matriz[1][1]=='x' && matriz[0][2]=='x')){
+                    //NAO FAZ NADA
+                }else{
+                    funcaoEscolhaO();
+                    }
+            }  
+        }
     }
 }
-
 //-----------*-----------------------*-------------------*---------------------*
-
-
 void funcaoprint(void){
     for(i=0;i<3;++i){
         for(j=0;j<3;++j){
@@ -75,10 +80,7 @@ void funcaoprint(void){
         printf("\n");
     }
 }
-
 //-----------*-----------------------*-------------------*---------------------*
-
-
 void funcaoEscolhaX(void){
     printf("Jogador 'X', digite a posicao (linha e coluna) desejada: \n");
     scanf("%i %i", &k, &l);//escanear somente os valores de K e L. se for escanear a matriz(tipo char), nao sera possivel inserir o valor da POSIÇÃO desejada. 
@@ -92,11 +94,8 @@ void funcaoEscolhaX(void){
         j=l-1;
     }
     matriz[i][j] = 'x';
-   
 }
-
 //-----------*-----------------------*-------------------*---------------------*
-
 void funcaoEscolhaO(void){
     printf("Jogador 'O', digite a posicao (linha e coluna) desejada: \n");
     scanf("%i %i", &k, &l);//escanear somente os valores de k e l. se for escanear a matriz(tipo char), nao sera possivel inserir o valor da POSIÇÃO desejada. 
@@ -111,32 +110,4 @@ void funcaoEscolhaO(void){
         j=l-1;
     }
     matriz[i][j] = 'O';
-    
 }
-
-
-//=========================OUTRAS INFORMAÇÕES E RASCUNHOS TEMPORARIOS=============================
-/*
--------------------condições de vitoria jog X
-
-(matriz[0][0]=='x' && matriz[0][1]=='x' && matriz[0][2]=='x') || 
-(matriz[0][0]=='x' && matriz[1][0]=='x' && matriz[2][0]=='x') || 
-(matriz[0][1]=='x' && matriz[1][1]=='x' && matriz[2][1]=='x') || 
-(matriz[0][2]=='x' && matriz[1][2]=='x' && matriz[2][2]=='x') || 
-(matriz[0][0]=='x' && matriz[1][1]=='x' && matriz[2][2]=='x') || 
-(matriz[1][0]=='x' && matriz[1][1]=='x' && matriz[1][2]=='x') || 
-(matriz[2][0]=='x' && matriz[2][1]=='x' && matriz[2][2]=='x') || 
-(matriz[2][0]=='x' && matriz[1][1]=='x' && matriz[0][2]=='x')
-
--------------------condições de vitoria jog O
-
-(matriz[0][0]=='O' && matriz[0][1]=='O' && matriz[0][2]=='O')|| 
-(matriz[0][0]=='O' && matriz[1][0]=='O' && matriz[2][0]=='O')|| 
-(matriz[0][1]=='O' && matriz[1][1]=='O' && matriz[2][1]=='O')||
-(matriz[0][2]=='O' && matriz[1][2]=='O' && matriz[2][2]=='O')||
-(matriz[0][0]=='O' && matriz[1][1]=='O' && matriz[2][2]=='O')||
-(matriz[1][0]=='O' && matriz[1][1]=='O' && matriz[1][2]=='O')||
-(matriz[2][0]=='O' && matriz[2][1]=='O' && matriz[2][2]=='O')||
-(matriz[2][0]=='O' && matriz[1][1]=='O' && matriz[0][2]=='O')
-
-*/
