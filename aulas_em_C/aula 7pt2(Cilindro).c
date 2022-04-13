@@ -22,5 +22,6 @@ int main()
     printf("A area do cilindro e = %i cm2\n", area);
     printf("O volume do cilindro e = %i mL\n", volume);
 
+    getchar();
     return 0;
 }

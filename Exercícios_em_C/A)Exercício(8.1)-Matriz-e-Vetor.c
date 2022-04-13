@@ -22,5 +22,6 @@ int main(void){
        i=i+1;
     }while(i<6);
 
+    getchar();
     return 0;
 }

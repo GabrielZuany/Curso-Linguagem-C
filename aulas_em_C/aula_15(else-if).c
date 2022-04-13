@@ -21,6 +21,6 @@ int main(){
     else {
         printf("Idoso");
     }
-
+    getchar();
     return 0;
 }

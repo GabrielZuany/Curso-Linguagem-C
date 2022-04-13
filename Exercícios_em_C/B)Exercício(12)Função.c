@@ -53,8 +53,7 @@ int main(void){
         default: printf("Escolha um das opcoes\n");
         break;
     }
-
-    system("pause");
+    getchar();
     return 0;
 }
 

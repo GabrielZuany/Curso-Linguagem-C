@@ -6,6 +6,7 @@ int main(){
         printf("%i",contador);
         ++contador;
     }
+    getchar();
     return 0;
 }
 

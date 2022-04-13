@@ -9,6 +9,6 @@ int main(void){
 
     printf("%f\n", resultado);
 
-    system("pause");
+    getchar();
     return 0;
 }

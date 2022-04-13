@@ -10,6 +10,7 @@ int main(void){
     teste();
     teste();
 
+    getchar();
     return 0;
 }
 

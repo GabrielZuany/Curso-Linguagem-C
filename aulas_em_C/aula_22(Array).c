@@ -12,5 +12,6 @@ int main(void){
 
     printf("%i\n", nota[0]);
 
-   
+   getchar();
+   return 0;
 }

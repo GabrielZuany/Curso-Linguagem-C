@@ -10,5 +10,7 @@ int main(){
     do{
         printf("Teste 2\n");
     } while( i != 0);
+
+    getchar();
     return 0;
 }

@@ -27,6 +27,6 @@ int main(void){
     printf("%c\n", depois.letra);
     
 
-    system("pause");
+    getchar();
     return 0;
 }

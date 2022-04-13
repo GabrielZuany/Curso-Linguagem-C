@@ -24,6 +24,7 @@ int main(void){
         }
 
     }
-    system("pause");
+
+    getchar();
     return 0;
 }

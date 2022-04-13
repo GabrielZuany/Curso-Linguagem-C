@@ -138,6 +138,8 @@ int main(){
     }
 
     printf("\nFIM DO PROGRAMA.\n\n");
+    
+    getchar();
     return 0;
     
 }

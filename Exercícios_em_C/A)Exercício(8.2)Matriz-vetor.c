@@ -26,9 +26,8 @@ int main(void){
         vetor_C[i]=vetor_A[i]-vetor_B[i];
         printf("|%i|", vetor_C[i]);
     }
-
     printf("\n");
     
-    system("pause");
+    getchar();
     return 0;
 }

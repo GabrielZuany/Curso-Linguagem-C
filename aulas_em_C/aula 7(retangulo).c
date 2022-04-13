@@ -18,5 +18,6 @@ int main()
 
     printf("O valor da area do retangulo e = %i", area);
 
+    getchar();
     return 0;
 }

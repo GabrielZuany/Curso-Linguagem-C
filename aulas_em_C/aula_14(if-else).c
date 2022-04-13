@@ -12,7 +12,7 @@ int main()
     }else{
         printf("Bebidas alcoolicas estao liberadas.\n");
     }
-
+    getchar();
     return  0;
 
 }

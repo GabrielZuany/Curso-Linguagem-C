@@ -19,5 +19,6 @@ int main(){
 
     printf("OBS: Le-se o valor binario da esquerda para a direita. Logo, o binario de 12 (0011) e lido 1100.\n");
    
+   getchar();
     return 0;
 }

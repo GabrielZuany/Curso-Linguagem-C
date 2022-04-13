@@ -37,5 +37,6 @@ int main(){
         default: 
         printf("erro, digite apenas valores de 1 a 7");
     }
+    getchar();
     return 0;
 }

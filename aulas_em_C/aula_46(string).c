@@ -15,8 +15,8 @@ int main(void){
         printf("%c", novaPalavra[i]);
     }
         printf("\n");
-
-    system("pause");
+        
+    getchar();
     return 0;
 }
 

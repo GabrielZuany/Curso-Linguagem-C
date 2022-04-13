@@ -8,7 +8,7 @@ int main(void){
     char palavra[]="Brasil";
 
     printf("%s\n", palavra);//%s da printf numa string
-
-    system("pause");
+    
+    getchar();
     return 0;
 }

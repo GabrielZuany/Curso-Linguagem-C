@@ -18,8 +18,8 @@ int main(void){
     res = pot(base, expo);
 
     printf("%i^%i = %i\n", base, expo, res);
-
-    system("pause");
+    
+    getchar();
     return 0;
 }
 

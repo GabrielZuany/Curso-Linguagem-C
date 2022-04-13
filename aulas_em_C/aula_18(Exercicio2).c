@@ -37,5 +37,6 @@ int main(){
     }
     else
 
+    getchar();
     return 0;
 }

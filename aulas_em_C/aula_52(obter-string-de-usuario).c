@@ -9,7 +9,6 @@ int main(void){
     scanf("%s%s", &nome, &sobrenome);
 
     printf("%s %s\n", nome, sobrenome);
-
-    system("pause");
+    getchar();
     return 0;
 }

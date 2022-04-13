@@ -7,6 +7,7 @@ int main(void){
 
     printf("A area = %f", area);
 
+    getchar();
     return 0;
 }
 

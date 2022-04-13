@@ -16,7 +16,7 @@ int main(void){
 
     printf("%i:%i:%i\n", agora.hora, agora.minuto, agora.segundo);
 
-    system("pause");
+    getchar();
     return 0;
 }
 /*

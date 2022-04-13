@@ -20,6 +20,7 @@ int main(){
 
         printf("Para efeitos de calculo, esta sendo utilizado arredondamento de duas casas decimais.\n");
 
+    getchar();
     return 0;
 }
 /*Ao inves de fazer um programa pegando a variavel numero*1, numero*2, numero*3.........ate

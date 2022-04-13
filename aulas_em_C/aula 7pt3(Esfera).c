@@ -16,5 +16,6 @@ int main()
     printf("A area da esfera = %f\n",area);
     printf("O volume da esfera = %f\n",volume);
 
+    getchar();
     return 0;
 }

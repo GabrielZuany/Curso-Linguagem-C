@@ -9,5 +9,6 @@ int main(void){
 
     printf("%i", matriz[0][0]); //linha 0 e coluna 0
 
+    getchar();
     return 0;
 }

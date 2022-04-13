@@ -14,7 +14,7 @@ int main(void){
 
     printf("A soma = %f\n", soma);
 
-    system("pause");
+    getchar();
     return 0;
 }
 

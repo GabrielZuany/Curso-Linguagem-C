@@ -13,7 +13,7 @@ int main(void){
         void funcaoJogada(void);
         funcaoJogada(); 
         
-    system("pause");
+        getchar();
     return 0;
 }
 

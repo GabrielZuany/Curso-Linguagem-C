@@ -153,5 +153,6 @@ int main()
 
     printf("\nPrograma encerrado.\n");
             
+    getchar();
     return 0;
 }

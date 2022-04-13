@@ -24,7 +24,7 @@ int main(void){
     printf("%i:%i:%i\n", proximo.horas, proximo.minutos, proximo.segundos);// esse printf retorna o valor das variaveis de proxima, proxima = teste(agora), ou seja //quando alteramos os valores de "10, 42, 58" dentro da função teste para "100, 100, //100" mudamos também os valores das variaveis contidas em proxima. assim esse //printf retorna "100, 100, 100"
     
     
-    system ("pause");
+    getchar();
     return 0;
 }
 

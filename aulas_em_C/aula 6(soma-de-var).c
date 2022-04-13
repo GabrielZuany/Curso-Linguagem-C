@@ -13,7 +13,6 @@ int main()
 
     printf("A soma das idades e %i.\n", idadetotal);
 
+    getchar();
     return 0;
-
-
 }

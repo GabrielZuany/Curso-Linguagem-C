@@ -18,7 +18,6 @@ printf("%i:%i:%i\n", teste[i].hora,teste[i].minuto, teste[i].segundo);
 
     }
     
-
-    system("pause");
+    getchar();
     return 0;
 }

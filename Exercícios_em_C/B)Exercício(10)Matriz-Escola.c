@@ -46,6 +46,6 @@ int main(void){
         printf(" MEDIA == %.2f\n", mediasAlunos[l]); 
         }
 /*----------------*------------------*---------------------*/       
-
+    getchar();
     return 0;
 }

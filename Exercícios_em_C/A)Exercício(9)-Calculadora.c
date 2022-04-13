@@ -34,5 +34,6 @@ int main(void){
                 }
     else printf("Dados inválidos! Por favor selecione um dos operadores válidos. (+, -, /, *)");
 
+    getchar();
     return 0;
 }

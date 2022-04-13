@@ -25,6 +25,6 @@ int main(){
         printf("|%i|", vetor[i]);
     }
     
-    system("pause");
+    getchar();
     return 0;
 }

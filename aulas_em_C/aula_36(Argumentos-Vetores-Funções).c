@@ -13,7 +13,7 @@ int main(void){
             printf("%i ", vetor[i]);
     }
 
-    system ("pause");
+    getchar();
     return 0;
 }
 

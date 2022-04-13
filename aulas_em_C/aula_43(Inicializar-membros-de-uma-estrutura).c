@@ -18,6 +18,6 @@ int main(void){
 
     printf("%i:%i:%i\n", agora.horas, agora.minutos, agora.segundos);
 
-    system ("pause");
+    getchar();
     return 0;
 }

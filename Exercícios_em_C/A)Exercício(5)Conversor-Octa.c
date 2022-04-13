@@ -16,5 +16,6 @@ int main(){
     printf("\nATENCAO: O VALOR EXIBIDO DIZ RESPEITO AOS RESTOS, LOGO, LE-SE AO CONTRARIO!!\n\n");
     printf("1000(dec) != 0 5 7 1 >>>>> 1000(dec) = 1750\n\n");
 
+    getchar();
     return 0;
 }

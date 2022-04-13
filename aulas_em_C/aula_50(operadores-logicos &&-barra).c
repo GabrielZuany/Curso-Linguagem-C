@@ -14,7 +14,7 @@ int main(void){
         printf("Nao deu certo\n");
     }
 
-    system("pause");
+    getchar();
     return 0;
 }
 

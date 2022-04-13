@@ -18,5 +18,6 @@ int main(){
     printf("ATENCAO: O VALOR EXIBIDO DIZ RESPEITO AOS RESTOS, LOGO, LE-SE AO CONTRARIO!!\n\n");
     printf("438(dec) != 6 11 1 >>>>> 438(dec) = 1 11 6\n\n");
 
+    getchar();
     return 0;
 }

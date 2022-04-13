@@ -8,6 +8,7 @@ int main()
     {
         printf("%d\n", contador);
     }
+    getchar();
     return 0;
 }
 

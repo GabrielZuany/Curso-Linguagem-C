@@ -6,4 +6,7 @@ int main(void){
     for (i=0; i<5; ++i){
         printf("%i, ", vetor[i]);
     }
+
+    getchar();
+    return 0;
 }

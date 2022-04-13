@@ -16,5 +16,6 @@ int main(){
             printf("%i nao e divisivel por %i.\n", a, b);
         }
     }
+    getchar();
     return 0;
 }

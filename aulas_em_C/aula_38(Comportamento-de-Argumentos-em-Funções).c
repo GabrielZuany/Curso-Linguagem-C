@@ -10,7 +10,7 @@ int main(void){
     printf("Variavel int na funcao principal = %i \n", x);
     printf("Vetor na funcao principal = %i \n", vetor[1]);
 
-    system("pause");
+    getchar();
     return 0;
 }
 

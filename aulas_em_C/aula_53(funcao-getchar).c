@@ -15,7 +15,7 @@ int main(void){
     linha[i-1] = '\0';
 
     printf("%s\n", linha);
-
-    system("pause");
+    
+    getchar();
     return 0;
 }

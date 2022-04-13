@@ -8,7 +8,7 @@ int main (void){
     }else{
         printf("Nao sao iguais\n");
     }
-    system("pause");
+    getchar();
     return 0;
 }
 

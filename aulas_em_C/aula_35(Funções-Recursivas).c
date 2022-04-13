@@ -13,7 +13,7 @@ int main(){
     printf("O fatorial = %i\n", resultado);
 
 
-    system ("pause");
+    getchar();
     return 0;
 }
 

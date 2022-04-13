@@ -17,5 +17,6 @@ int main(void){
 
     printf("A media do(a) aluno(a) = %.2f", media);
     
+    getchar();
     return 0;
 }

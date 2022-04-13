@@ -17,6 +17,7 @@ int main(){
     }
 
     printf("Resultado = %i" , resultado);}
-   
+    
+    getchar();
     return 0;
 }

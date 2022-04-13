@@ -6,7 +6,7 @@ int main(void){
 
     funcaoPrint(matriz);
     
-    system("pause");
+    getchar();
     return 0;
 }
 

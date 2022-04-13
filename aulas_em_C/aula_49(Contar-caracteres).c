@@ -12,7 +12,7 @@ int main(void){
     tamanhostring(stringUsuario);
     printf("A string %s possui %i letras e %i caracteres(4 carcateres principais e o caractere nulo\\0).\n", stringUsuario, num, num+1);
 
-    system("pause");
+    getchar();
     return 0;
 }
 //---------------------\0 = caractere nulo, ultimo caractere---------------

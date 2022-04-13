@@ -5,6 +5,7 @@ int main(){
     void imprimaMensagem(void); //função declarada
     imprimaMensagem(); //chamar a função
 
+    getchar();
     return 0;
 }
 
