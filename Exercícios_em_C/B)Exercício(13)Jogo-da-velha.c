@@ -9,10 +9,10 @@
 
 int main(void){
     int contador;
-
+        printf("\a");
         void funcaoJogada(void);
         funcaoJogada(); 
-        
+        printf("\a");
         getchar();
     return 0;
 }
@@ -34,7 +34,7 @@ void funcaoJogada(void){
         (matriz[2][0]=='x' && matriz[2][1]=='x' && matriz[2][2]=='x')||
         (matriz[2][0]=='x' && matriz[1][1]=='x' && matriz[0][2]=='x')
         ){
-            printf("Jogador X venceu\n\n");
+            printf("Jogador X venceu\n\n\a");
         }
         else if(
         (matriz[0][0]=='O' && matriz[0][1]=='O' && matriz[0][2]=='O')|| 
@@ -46,7 +46,7 @@ void funcaoJogada(void){
         (matriz[2][0]=='O' && matriz[2][1]=='O' && matriz[2][2]=='O')||
         (matriz[2][0]=='O' && matriz[1][1]=='O' && matriz[0][2]=='O')
         ){
-            printf("Jogador O venceu\n\n");
+            printf("Jogador O venceu\n\n\a");
         }
         
         else{
