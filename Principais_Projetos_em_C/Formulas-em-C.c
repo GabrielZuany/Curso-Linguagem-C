@@ -2,18 +2,18 @@
 
 int main()
 {
-    float b; //base da fig plana
-    float h;//altura da fig plana
-    float raio;
-    float a; //altura da figura espacial
-    float area_base;
+    float b = 0; //base da fig plana
+    float h = 0;//altura da fig plana
+    float raio = 0;
+    float a = 0; //altura da figura espacial
+    float area_base = 0;
 
-    float celsius;
-    float fahrenheit;
-    float kelvin;
+    float celsius = 0;
+    float fahrenheit = 0;
+    float kelvin = 0;
 
-    char opcao; //Indica ao programa qual tipo de figura sera calculada
-    int alternativa; //indica ao programa qual a figura que sera calculada
+    char opcao = 'x'; //Indica ao programa qual tipo de figura sera calculada
+    int alternativa = 0; //indica ao programa qual a figura que sera calculada
     printf("Escolha o que deseja calcular:\n \n");
     printf("a)Area; \nb)Volume;\nc)Converter undades de temperatura;\nd)Sair do programa.\n\n");
     scanf("%c", &opcao);

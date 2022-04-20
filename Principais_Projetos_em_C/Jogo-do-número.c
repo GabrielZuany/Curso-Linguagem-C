@@ -1,12 +1,11 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 #include<time.h>
 
 int main(){
 
     int tentativas = 10;
-    int valor_digitado;
+    int valor_digitado = 0;
 
     srand(time(NULL));//função que precede a geração de um num aleatorio. ela retira um valor a partir do horario de entrada no sistema
     int numero_aleatorio = rand()%100;//gerar um numero aleatorio entre 0 e 100
@@ -23,9 +22,9 @@ int main(){
             printf("Ops, valor muito alto! Tente novamente.\n");
             tentativas--;
             printf("Tentativas restantes: %i.\n", tentativas);
-        }else printf("Parabens, voce acertou o numero! Winner!\n\n");
+        }else printf("Parabens, voce acertou o numero! Winner!\n\n Ctrl+C para sair\n");
     }while(tentativas!=0);
 
-    getch();
+    getchar();
     return 0;
 }

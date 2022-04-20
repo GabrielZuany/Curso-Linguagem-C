@@ -2,13 +2,14 @@
 #include <stdio.h>
 
    //VARIAVES GLOBAIS
-    int k, l;//numeros digtados pelo usuario
-    int i; // variavel de controle de loop
-    int j; // variavel de controle de loop
+    int k =0;//numeros digtados pelo usuario
+    int l=0;//numeros digtados pelo usuario
+    int i=0; // variavel de controle de loop
+    int j=0; // variavel de controle de loop
     char matriz[3][3]={' ',' ',' ',' ',' ',' ',' ',' ',' '};
 
 int main(void){
-    int contador;
+    int contador =0;
         printf("\a");
         void funcaoJogada(void);
         funcaoJogada(); 
@@ -22,7 +23,7 @@ int main(void){
 //--------------------------------------FUNÇÕES------------------------------------
 
 void funcaoJogada(void){
-    int contador;
+    int contador =0;
     for(contador=0;contador<5;++contador){
         if(
         (matriz[0][0]=='x' && matriz[0][1]=='x' && matriz[0][2]=='x')|| 

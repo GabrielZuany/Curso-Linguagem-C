@@ -2,9 +2,9 @@
 
 int main(){
 
-    int numero;
-    long int resto;
-    int alternativa;
+    int numero=0;
+    long int resto = 0;
+    int alternativa = 0;
 
     printf("Digite a conversao que deseja realizar: \n");
     printf("1)Decimal - Binario;\n");
@@ -59,6 +59,6 @@ int main(){
         
     }
     
-   getchar();
+    getchar();
     return 0;
 }

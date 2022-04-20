@@ -7,10 +7,10 @@ imprime para cada um a média das notas.*/
 #include<stdio.h>
 
 int main(void){
-    int l; //linha
-    int c; //coluna
-    int numeroalunos;
-    int numerodenotas;
+    int l = 0; //linha
+    int c = 0; //coluna
+    int numeroalunos = 0;
+    int numerodenotas = 0;
     printf("Digite o numero de alunos presentes: \n");
     scanf("%i", &numeroalunos);
     printf("Digite o numero de provas: ");
