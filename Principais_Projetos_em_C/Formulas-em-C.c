@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#define PI 3.141592
 int main()
 {
     float b = 0; //base da fig plana
@@ -62,7 +63,7 @@ int main()
                     case 5: 
                         printf("Digite o valor do raio: \n");
                         scanf("%f", &raio);
-                        float area_circulo = 3.14*raio*raio;
+                        float area_circulo = PI*raio*raio;
                         printf("A area do circulo = %.2f u2\n", area_circulo);
                     break;
 
@@ -88,7 +89,7 @@ int main()
                     case 2:
                         printf("Digite o valor do raio da esfera: \n");
                         scanf("%f", &raio);
-                        float volume_esfera = (4/3)*3.14*raio*raio*raio;
+                        float volume_esfera = (4/3)*PI*raio*raio*raio;
                         printf("O volume da esfera = %.2f u3\n", volume_esfera);
                     break;
 
