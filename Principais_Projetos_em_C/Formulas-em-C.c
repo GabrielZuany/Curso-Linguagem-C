@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define PI 3.141592
+#define PI 3.14159
 #define RAIZ3 1.732
 int main()
 {
