@@ -19,10 +19,11 @@ int main()
 
     char opcao = 'x'; //Indica ao programa qual TIPO de figura sera calculada
     int alternativa = 0; //indica ao programa qual a figura que sera calculada
+    int iniciar = 1;
+    while(iniciar==1){
     printf("Escolha o que deseja calcular:\n \n");
     printf("a)Area; \nb)Volume;\nc)Converter undades de temperatura;\nd)Calcular Medias;\ne)Raizes do Segundo grau;\nf)Sair do programa.\n\n");
-    scanf("%c", &opcao);
-
+    scanf("%c*[^\n]", &opcao);//LIMPEZA DE BUFFER
         switch (opcao)
         {
             case 'a': 
@@ -216,6 +217,9 @@ int main()
             break;
             default: printf("Erro! Por favor escolha uma das opcoes.\n\n");
         }
+        printf("\n1)Rodar novamente;\n2)Encerrar a execucao.\n");
+        scanf("%i", &iniciar);
+    }
 
     printf("\nPrograma encerrado.\n");
             
