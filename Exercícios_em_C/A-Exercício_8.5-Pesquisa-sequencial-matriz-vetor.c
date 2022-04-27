@@ -12,6 +12,7 @@ int main(void){
             if(matriz[l][c]==valor)
             {
                 printf("Valor encontrado na posicao %i %i \n", l, c);
+                break;
             }
         }
     }
